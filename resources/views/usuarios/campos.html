@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <tr>
+        <td>
+        <label> Solo letras </label>
+        </td>
+        <td align="center">
+        <input type="text" onkeypress="return SoloLetras(event);" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+        <label> Especial </label>
+        </td>
+        <td align="center">
+        <input type="text" onkeypress="return Especial(event);" required>
+        </td>
+        </tr>
+
+</body>
+</html>
+
+<script>
+    function SoloLetras(e)
+{
+key = e.keyCode || e.which;
+tecla = String.fromCharCode(key).toString();
+letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú";
+
+especiales = [8,13];
+tecla_especial = false
+for(var i in especiales) {
+if(key == especiales[i]){
+ tecla_especial = true;
+ break;
+}
+}
+
+if(letras.indexOf(tecla) == -1 && !tecla_especial)
+{
+ alert("Ingresar solo letras");
+ return false;
+}
+}
+
+function Especial(e)
+{
+key = e.keyCode || e.which;
+tecla = String.fromCharCode(key).toString();
+letraespecial = "$%!@._";
+
+especiales = [8,13];
+tecla_especial = false
+for(var i in especiales) {
+if(key == especiales[i]){
+ tecla_especial = true;
+ break;
+}
+}
+
+if(letraespecial.indexOf(tecla) == -1 && !tecla_especial)
+{
+ alert("Ingresar solo letras especiales");
+ return false;
+}
+}
+</script>
