@@ -21,7 +21,7 @@ use App\Exports\UsersExportpdf;
 |
 */
 
-Route::get('/', function () {
+Route::get('/',function () {
     return view('welcome');
 });
 
