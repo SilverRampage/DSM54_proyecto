@@ -66,4 +66,4 @@ Route::get('estados', [App\Http\Controllers\UsuarioController::class, 'getEstado
 Route::get('municipios', [App\Http\Controllers\UsuarioController::class, 'getMunicipios'])->name('municipios');
 
 
-
+Route::name('sensores12?temp=23&hum=45')->get('sensores12', [UsuarioController::class, 'sensores12'])->name('sensores12?temp=0&hum=0');

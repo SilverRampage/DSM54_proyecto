@@ -8,7 +8,9 @@
     <a class="nav-link" href="/roles">
     <i class="fa-solid fa-chess-king" style="color: #005eff;"></i></i><span>Roles</span>
     </a>
-    <a class="nav-link" href="/blogs">
+    <a class="nav-link" href="/sensores12?temp=0&hum=0">
     <i class="fa-solid fa-blog" style="color: #4e8bf4;"></i></i><span>Sensores</span>
     </a>
+
+
 </li>

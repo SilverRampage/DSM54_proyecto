@@ -204,4 +204,9 @@ class UsuarioController extends Controller
         //return redirect()->route('combo');
         
     }
+    
+    public function sensores12 ()
+    {
+        return view("blogs/dht");
+    }
 }
